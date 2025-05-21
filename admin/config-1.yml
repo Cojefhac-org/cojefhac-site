@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: Cojefhac-org/cojefhac-site
+  branch: main
+  auth_type: implicit
+  app_id: 6H5SY5dkjTM9FA1iOPG07fWjFyIDxkGI
+  base_url: https://cojefhac.netlify.app/admin/index.html
+  auth_endpoint: https://dev-4k7b3pnllcrka4mj.us.auth0.com/authorize
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "activites"
+    label: "Activités"
+    folder: "activites"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
