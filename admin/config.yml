@@ -6,8 +6,10 @@ backend:
   app_id: 6H5SY5dkjTM9FA1iOPG07fWjFyIDxkGI
   base_url: https://cojefhac.netlify.app/admin/index.html
   auth_endpoint: https://dev-4k7b3pnllcrka4mj.us.auth0.com/authorize
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
+
 collections:
   - name: "activites"
     label: "Activités"
